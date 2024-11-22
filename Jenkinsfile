@@ -3,7 +3,7 @@ pipeline{
     label 'docker'
   }
   tools{
-    Maven 'maven3'
+    maven 'maven3'
     jdk 'java17'
   }
   environments {
