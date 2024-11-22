@@ -10,7 +10,7 @@ pipeline {
         App_name = "My_App"
         RELEASE = "1.0.0"
         Docker_User = "starkdocker475"
-        Docker_Pass = credentials('docker_hub_credentials')  // Using Jenkins credentials store
+        Docker_Pass = credentials('docker_hub credentials')  // Using Jenkins credentials store
         Image_name = "${Docker_User}/${App_name}"  // Concatenating strings properly
         Image_tag = "${RELEASE}-${BUILD_NUMBER}"  // Correcting the variable for build number
     }
